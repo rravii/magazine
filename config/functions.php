@@ -13,7 +13,7 @@
     }
 
     function tokenize($length=100){
-        $str = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        $char = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
         $len = strlen($char);
         $token = '';
         for ($i=0; $i < $length; $i++){
@@ -22,7 +22,7 @@
         return $token;
     }
 
-    function redirect($loc,$key,$message){
+    function redirect($loc,$key="",$message=""){
         $_SESSION[$key]=$message;
         @header('location: '.$loc);
     }

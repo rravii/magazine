@@ -1,0 +1,8 @@
+May 22, 2020 02:53:22 pm : (run Query) : SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+May 22, 2020 02:53:22 pm : (run Query) : SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+May 22, 2020 02:54:38 pm : (run Query) : SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+May 22, 2020 02:54:38 pm : (run Query) : SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+May 22, 2020 04:18:32 pm : (run Query database) : SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'admin@magazine.com' for key 'email'
+May 23, 2020 12:36:47 pm : (addData) : SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'khwopa@magazine.com' for key 'email'
+May 23, 2020 01:16:17 pm : (addData) : Data cannot be inserted without data
+May 23, 2020 01:16:21 pm : (addData) : Data cannot be inserted without data
