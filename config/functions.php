@@ -25,5 +25,29 @@
     function redirect($loc,$key="",$message=""){
         $_SESSION[$key]=$message;
         @header('location: '.$loc);
+        exit();
+    }
+
+    function flashMessage(){
+        if (isset($_SESSION['error']) && !empty($_SESSION['error'])){
+            echo "<span class='alert alert-danger'>".$_SESSION['error']."</span>";
+            unset($_SESSION['error']); //ek choti message dekhaye paxi delete hunxa yadi yo rakhena bhanae jati choti reload garyo teti choti dekhau xa 
+        }else if (isset($_SESSION['success']) && !empty($_SESSION['success'])){
+            echo "<span class='alert alert-success'>".$_SESSION['success']."</span>";
+            unset($_SESSION['success']);
+        }else if (isset($_SESSION['warning']) && !empty($_SESSION['warning'])){
+            echo "<span class='alert alert-warning'>".$_SESSION['warning']."</span>";
+            unset($_SESSION['warning']);
+        }
+?>
+    <script type="text/javascript">
+        setTimeout(function(){ //function() is anonymous function
+            //jquery ho yo talako here either getelementbyid or getelementbyclass hunxa
+            $('.alert').slideUp('slow');  // html tag bhitra jaha jaha alert xa tyha bata slideup hunae ho
+            // $ le getelement garxa, byclass . le define garxa in bracket ra byid # le define garxa inside bracket
+        }, 3000);// 3000ms sec ho yo ie 3 sec
+    </script>
+<?php
+
     }
 ?>

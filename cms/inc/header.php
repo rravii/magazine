@@ -1,3 +1,8 @@
+<?php
+    include $_SERVER['DOCUMENT_ROOT'].'config/init.php'; // DOCUMENT_ROOT samma chai magazine/ samma ko part dinxa
+    // 'config/init.php' le config bhitra ko sabai file load hunxa 
+    // flashMessage call garna ko lagi include gareko yo from functions.php
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,7 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Gentelella Alela! | </title>
+    <title>Magazine | <?php echo (isset($header) && !empty($header))?$header:"Dashboard" ?></title>
 
     <!-- Bootstrap -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
@@ -26,7 +31,7 @@
         <div class="col-md-3 left_col">
           <div class="left_col scroll-view">
             <div class="navbar nav_title" style="border: 0;">
-              <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Gentelella Alela!</span></a>
+              <a href="index" class="site_title"><i class="fa fa-paw"></i> <span>Gentelella Alela!</span></a>
             </div>
 
             <div class="clearfix"></div>
@@ -74,8 +79,9 @@
                         <span>Settings</span>
                       </a>
                     </li>
-                    <li><a href="javascript:;">Help</a></li>
-                    <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+                    <li><a href="password-change">Change Password</a></li>
+                    <li><a href="logout"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li> 
+                    <!-- href=logout.. yo file cms ma banaunu parxa.. how it is accessed: header.php is included in index.php so it can access cms folder batai logout -->
                   </ul>
                 </li>
 

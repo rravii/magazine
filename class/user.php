@@ -45,8 +45,22 @@
             $args = array(
                 // 'fields' => array('id', 'username', 'email', 'password'),
                 'where' => array( //kun kun column and le jodnae nabhayae or le jodnae
-                        'or' => array(
+                        'and' => array(
                             'email' => $email,
+                            'status' => "Active", // Active user lai matra linae
+                        )
+                    )
+            );
+            return $this->getData($args, $is_die);
+        }
+
+        public function getUserbySessionToken($sessiontoken, $is_die=false){
+            $args = array(
+                // 'fields' => array('id', 'username', 'email', 'password'),
+                'where' => array( //kun kun column and le jodnae nabhayae or le jodnae
+                        'and' => array(
+                            'session_token' => $sessiontoken,
+                            'status' => "Active",
                         )
                     )
             );
