@@ -11,10 +11,22 @@
 
         public function getCategorybyId($category_id, $is_die=false){
             $args = array(
-                'fields' => array('categoryname', 'email', 'password'),
+                // 'fields' => array('categoryname', 'email', 'password'),
                 'where' => array( //kun kun column and le jodnae nabhayae or le jodnae
                         'or' => array(
                             'id' => $category_id,
+                        )
+                    )
+            );
+
+            return $this->getData($args, $is_die);
+        }
+
+        public function getAllCategory($is_die=false){
+            $args = array(
+                'where' => array( //kun kun column and le jodnae nabhayae or le jodnae
+                        'or' => array(
+                            'status' => 'Active',
                         )
                     )
             );
