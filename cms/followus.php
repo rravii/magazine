@@ -22,7 +22,7 @@ $header = "Follow Us";
         <div class="col-md-12 col-sm-12 col-xs-12">
           <div class="x_panel">
             <div class="x_title">
-              <h2>List of Follow Us</h2>
+              <h2>List of Follow Us:</h2>
 
               <ul class="nav navbar-right panel_toolbox">
                 <a href="#" class="btn btn-primary" onclick="addFollowUs()">Add Follow Us Icon</a>
@@ -51,10 +51,10 @@ $header = "Follow Us";
                       <td><a href="<?php echo $followus->url;?>"><?php echo $followus->url;?></a></td>  
                       <td>
                         <a href="javascript:;" class="btn btn-info" onclick="editFollowUs(this); " data-followus_info='<?php echo(json_encode($followus))?>'>
-                          <i class="fa fa-edit"></i>
+                          <i class="fa fa-pencil-square-o"></i>
                         </a>
                         <a href="process/followus?id=<?php echo($followus->id)?>&amp;act=<?php echo substr(md5("Delete-FollowUs-".$followus->id.$_SESSION['token']), 3,15) ?>" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this followus?');">
-                          <i class="fa fa-trash"></i>
+                          <i class="fa fa-trash-o"></i>
                         </a>
                       </td>
                     </tr>           
@@ -74,7 +74,7 @@ $header = "Follow Us";
                         </button>
                         <h4 class="modal-title" id="title">Add FollowUs</h4>
                       </div>
-                      <form action="process/followus.php" method="post" enctype="multipart/form-data">
+                      <form action="process/followus" method="post">
                         <div class="modal-body">
                           <div class="form-group">
                               <label for="">Icon Name</label>
@@ -86,10 +86,9 @@ $header = "Follow Us";
                           </div>                                       
                         </div>
                         <div class="modal-footer">
-                          <input type="hidden" name="old_img" id="old_img" value="<?php echo(isset($followus_image->id) && !empty($followus_image->id))?"$followus_image->id":""?>">
                           <input type="hidden" id="id" name="id">
                           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                          <button type="sumbit" class="btn btn-primary">Save changes</button>
+                          <button type="sumbit" class="btn btn-primary">Submit</button>
                         </div>                
                       </form>      
                   </div><!-- /.modal-content -->
@@ -130,7 +129,7 @@ $header = "Follow Us";
     showModal();  
   }
   
-  function showModal(data=""){
+  function showModal(){
     $('.modal').modal();
   }
 
