@@ -50,4 +50,44 @@
 <?php
 
     }
+
+    // Array
+    //     (
+    //         [name] => Screenshot (6).png
+    //         [type] => image/png
+    //         [tmp_name] => C:\xampp\tmp\php4BCB.tmp
+    //         [error] => 0
+    //         [size] => 237916
+    //     )
+
+    function uploadImage($data, $loc="image"){
+        if($data){
+            if(!$data['error']){ //if error not 0
+                if($data['size']<5000000){
+                    $ext = pathinfo($data['name'], PATHINFO_EXTENSION);
+                    if (in_array(strtolower($ext), ALLOWED_EXTENSION)){ //ALLOWED_EXTENSION in config.php
+                        $destination = UPLOAD_PATH.strtolower($loc).'/'; // upload ma image gayera bass bhanera path deko
+                            if(!is_dir($destination)){ //is_dir : directory ma destination bhan nae folder xa ki nai
+                                mkdir($destination, 0777, true); //0777: permission deko , true: multiple file banau na sakos bhanera
+                            }
+                            $filename = ucfirst(strtolower($loc)).'-'.date('Ymdhisa').rand(0, 999).'.'.$ext; //ucfirst: 1st letter lai capital parxa
+                            $success = move_uploaded_file($data['tmp_name'], $destination.$filename);
+                            if($success){
+                                return $filename;
+                            }else{
+                                return false;
+                            }
+                    }else{
+                        return false;
+                    }
+                }else{
+                    return false;
+                }
+            }else{
+                return false;
+            }
+        }else{
+            return false;
+        }
+    }
 ?>

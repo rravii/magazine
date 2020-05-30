@@ -13,6 +13,22 @@
                       <li><a href="category">Category</a></li>
                     </ul>
                   </li>
+                  <li><a><i class="fa fa-edit"></i> Blog <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="blog">List Blog</a></li>
+                      <li><a href="addblog">Add Blog</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-edit"></i> Advertisment <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="ads">Ads</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-edit"></i> Follow us <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="followus"> Icons </a></li>
+                    </ul>
+                  </li>
                   <li><a><i class="fa fa-desktop"></i> UI Elements <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
                       <li><a href="general_elements.html">General Elements</a></li>

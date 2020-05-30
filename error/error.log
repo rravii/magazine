@@ -7,3 +7,52 @@ May 23, 2020 12:36:47 pm : (addData) : SQLSTATE[23000]: Integrity constraint vio
 May 23, 2020 01:16:17 pm : (addData) : Data cannot be inserted without data
 May 23, 2020 01:16:21 pm : (addData) : Data cannot be inserted without data
 May 29, 2020 10:32:21 am : (run Query database) : SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'admin@magazine.com' for key 'email'
+May 30, 2020 08:17:44 am : (run Query database) : SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'admin@magazine.com' for key 'email'
+May 30, 2020 02:22:16 pm : (addData) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'magazine.advertisement' doesn't exist
+May 30, 2020 02:32:35 pm : (run Query database) : SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'admin@magazine.com' for key 'email'
+May 30, 2020 08:59:33 pm : (addData) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'magazine.info' doesn't exist
+May 30, 2020 09:06:15 pm : (addData) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'magazine.info' doesn't exist
+May 30, 2020 09:06:56 pm : (addData) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'magazine.info' doesn't exist
+May 30, 2020 09:09:15 pm : (addData) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'magazine.info' doesn't exist
+May 30, 2020 09:09:16 pm : (addData) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'magazine.info' doesn't exist
+May 30, 2020 09:09:17 pm : (addData) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'magazine.info' doesn't exist
+May 30, 2020 09:09:17 pm : (addData) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'magazine.info' doesn't exist
+May 30, 2020 09:09:17 pm : (addData) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'magazine.info' doesn't exist
+May 30, 2020 09:09:17 pm : (addData) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'magazine.info' doesn't exist
+May 30, 2020 09:09:18 pm : (addData) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'magazine.info' doesn't exist
+May 30, 2020 09:09:56 pm : (addData) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'magazine.info' doesn't exist
+May 30, 2020 09:09:56 pm : (addData) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'magazine.info' doesn't exist
+May 30, 2020 09:10:28 pm : (addData) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'magazine.info' doesn't exist
+May 30, 2020 09:10:29 pm : (addData) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'magazine.info' doesn't exist
+May 30, 2020 09:10:29 pm : (addData) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'magazine.info' doesn't exist
+May 30, 2020 09:12:40 pm : (addData) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'magazine.info' doesn't exist
+May 30, 2020 09:12:41 pm : (addData) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'magazine.info' doesn't exist
+May 30, 2020 09:12:41 pm : (addData) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'magazine.info' doesn't exist
+May 30, 2020 09:12:41 pm : (addData) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'magazine.info' doesn't exist
+May 30, 2020 09:12:42 pm : (addData) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'magazine.info' doesn't exist
+May 30, 2020 09:13:03 pm : (addData) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'magazine.info' doesn't exist
+May 30, 2020 09:13:03 pm : (addData) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'magazine.info' doesn't exist
+May 30, 2020 09:13:19 pm : (addData) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'magazine.info' doesn't exist
+May 30, 2020 09:13:19 pm : (addData) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'magazine.info' doesn't exist
+May 30, 2020 09:14:54 pm : (addData) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'magazine.info' doesn't exist
+May 30, 2020 09:24:25 pm : (addData) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'magazine.followuss' doesn't exist
+May 30, 2020 09:24:45 pm : (addData) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'magazine.followuss' doesn't exist
+May 30, 2020 09:24:45 pm : (addData) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'magazine.followuss' doesn't exist
+May 30, 2020 09:25:47 pm : (addData) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'magazine.followuss' doesn't exist
+May 30, 2020 09:25:47 pm : (addData) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'magazine.followuss' doesn't exist
+May 30, 2020 09:26:37 pm : (addData) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'magazine.followuss' doesn't exist
+May 30, 2020 09:26:46 pm : (addData) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'magazine.followuss' doesn't exist
+May 30, 2020 09:26:46 pm : (addData) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'magazine.followuss' doesn't exist
+May 30, 2020 09:29:36 pm : (addData) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'magazine.followuss' doesn't exist
+May 30, 2020 09:29:36 pm : (addData) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'magazine.followuss' doesn't exist
+May 30, 2020 09:31:08 pm : (addData) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'magazine.followuss' doesn't exist
+May 30, 2020 09:31:40 pm : (addData) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'magazine.followuss' doesn't exist
+May 30, 2020 09:31:42 pm : (addData) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'magazine.followuss' doesn't exist
+May 30, 2020 09:33:16 pm : (addData) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'magazine.followuss' doesn't exist
+May 30, 2020 09:33:40 pm : (addData) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'magazine.followuss' doesn't exist
+May 30, 2020 09:35:00 pm : (addData) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'magazine.followuss' doesn't exist
+May 30, 2020 09:35:08 pm : (addData) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'magazine.followuss' doesn't exist
+May 30, 2020 09:35:08 pm : (addData) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'magazine.followuss' doesn't exist
+May 30, 2020 09:37:12 pm : (addData) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'magazine.followuss' doesn't exist
+May 30, 2020 09:37:19 pm : (addData) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'magazine.followuss' doesn't exist
+May 30, 2020 09:37:19 pm : (addData) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'magazine.followuss' doesn't exist

@@ -65,7 +65,7 @@ include 'inc/header.php'; ?>
                                             php ko data lai html ma convert garya aba html ko lai js ma garna milxa -->
                                             <i class="fa fa-pencil-square-o"></i>
                                         </a>
-                                        <a href="javascript:;" class="btn btn-danger">
+                                        <a href="process/category?id=<?php echo($category->id) ?>&amp;act=<?php echo substr(md5("Delete-Category-".$category->id.$_SESSION['token']), 3, 15) ?>" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete the category?');">
                                             <i class="fa fa-trash-o"></i>
                                         </a>
                                     </td>

@@ -34,6 +34,47 @@
                     id int not null AUTO_INCREMENT PRIMARY KEY,
                     categoryname varchar(30),
                     description text,
+                    status enum('Active','Passive') default 'Active',
+                    added_by int,
+                    created_date datetime default current_timestamp,
+                    updated_date datetime on update current_timestamp
+                )
+        ",
+        'blog-post' => "
+            CREATE TABLE IF NOT EXISTS blogs
+                (
+                    id int not null AUTO_INCREMENT PRIMARY KEY,
+                    title varchar(250),
+                    content text,
+                    featured enum('Featured', 'notFeatured') default 'notFeatured',
+                    categoryid int,
+                    view int,
+                    image varchar(50),
+                    status enum('Active','Passive') default 'Active',
+                    added_by int,
+                    created_date datetime default current_timestamp,
+                    updated_date datetime on update current_timestamp
+                )
+        ",
+        'ads' => "
+            CREATE TABLE IF NOT EXISTS advertisement
+                (
+                    id int not null AUTO_INCREMENT PRIMARY KEY,
+                    url text,
+                    adType enum('widead','simplead') default 'widead',
+                    image varchar(50),
+                    status enum('Active','Passive') default 'Active',
+                    added_by int,
+                    created_date datetime default current_timestamp,
+                    updated_date datetime on update current_timestamp
+                )
+        ",
+        'followus'=>"
+            CREATE TABLE IF NOT EXISTS followuss
+                (
+                    id int not null AUTO_INCREMENT PRIMARY KEY,
+                    iconname varchar(20),
+                    url text,
                     status enum('Active','Passive') default 'Passive',
                     added_by int,
                     created_date datetime default current_timestamp,
