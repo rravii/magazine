@@ -42,7 +42,9 @@
             $blog_info = $Blog->getBlogbyId($blog_id);
             // debugger($blog_info,true);
             if ($blog_info){
-                if ($_SESSION['user_id'] == $blog_info[0]->added_by){
+                // debugger($blog_info[0],true);
+                // return;
+                if ($_SESSION['user_id'] == $blog_info[0]->added_by) {
                     $success = $Blog->updateBlogById($data, $blog_id);
                 }else{
                     redirect('../addblog', 'error', 'You are not allowed to access this Blog.');

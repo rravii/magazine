@@ -38,6 +38,32 @@
             return $this->getData($args, $is_die);
         }
 
+        public function getAdsByAdtypeWidead($is_die=false){
+            $args = array(
+                'where' => array( //kun kun column and le jodnae nabhayae or le jodnae
+                        'and' => array(
+                            'status' => 'Active',
+                            "adType" => 'widead'
+                        )
+                    )
+            );
+
+            return $this->getData($args, $is_die);
+        }
+
+        public function getAdsByAdtypeSimplead($is_die=false){
+            $args = array(
+                'where' => array( //kun kun column and le jodnae nabhayae or le jodnae
+                        'and' => array(
+                            'status' => 'Active',
+                            "adType" => 'simplead'
+                        )
+                    )
+            );
+
+            return $this->getData($args, $is_die);
+        }
+
         public function updateAdsById($data, $id, $is_die=false){
             $args = array(
                 'where' => array( //kun kun column and le jodnae nabhayae or le jodnae

@@ -62,7 +62,7 @@ include 'inc/header.php'; ?>
                                 <tr>
                                     <td><?php echo $key+1; ?></td>
                                     <td><?php echo $blog->title; ?></td>
-                                    <td><?php echo html_entity_decode($blog->content); ?></td>
+                                    <td><?php echo html_entity_decode(substr($blog->content,0,50)); ?>...</td>
                                     <td><?php echo $blog->featured; ?></td>
                                     <td><?php echo $blog->category; ?></td>
                                     <td><?php echo (isset($blog->view) && !empty($blog->view))?$blog->view:"0"; ?></td>

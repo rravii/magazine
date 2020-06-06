@@ -31,7 +31,7 @@
         <div class="col-md-3 left_col">
           <div class="left_col scroll-view">
             <div class="navbar nav_title" style="border: 0;">
-              <a href="index" class="site_title"><i class="fa fa-paw"></i> <span>Gentelella Alela!</span></a>
+              <a href="index" class="site_title"><i class="fa fa-paw"></i> <span>Web Magazine!</span></a>
             </div>
 
             <div class="clearfix"></div>
@@ -39,11 +39,11 @@
             <!-- menu profile quick info -->
             <div class="profile clearfix">
               <div class="profile_pic">
-                <img src="assets/images/img.jpg" alt="..." class="img-circle profile_img">
+                <img src="../../assets/img/avatar.png" alt="..." class="img-circle profile_img">
               </div>
               <div class="profile_info">
                 <span>Welcome,</span>
-                <h2>John Doe</h2>
+                <h2>Admin</h2>
               </div>
               <div class="clearfix"></div>
             </div>
@@ -68,24 +68,24 @@
               <ul class="nav navbar-nav navbar-right">
                 <li class="">
                   <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                    <img src="assets/images/img.jpg" alt="">John Doe
+                    <img src="../../assets/img/avatar.png" alt="">Admin
                     <span class=" fa fa-angle-down"></span>
                   </a>
                   <ul class="dropdown-menu dropdown-usermenu pull-right">
-                    <li><a href="javascript:;"> Profile</a></li>
-                    <li>
+                    <!-- <li><a href="javascript:;"> Profile</a></li> -->
+                    <!-- <li>
                       <a href="javascript:;">
                         <span class="badge bg-red pull-right">50%</span>
                         <span>Settings</span>
                       </a>
-                    </li>
+                    </li> -->
                     <li><a href="password-change">Change Password</a></li>
                     <li><a href="logout"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li> 
                     <!-- href=logout.. yo file cms ma banaunu parxa.. how it is accessed: header.php is included in index.php so it can access cms folder batai logout -->
                   </ul>
                 </li>
 
-                <li role="presentation" class="dropdown">
+                <!-- <li role="presentation" class="dropdown">
                   <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
                     <i class="fa fa-envelope-o"></i>
                     <span class="badge bg-green">6</span>
@@ -93,7 +93,7 @@
                   <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
                     <li>
                       <a>
-                        <span class="image"><img src="assets/images/img.jpg" alt="Profile Image" /></span>
+                        <span class="image"><img src="../../assets/img/avatar.png" alt="Profile Image" /></span>
                         <span>
                           <span>John Smith</span>
                           <span class="time">3 mins ago</span>
@@ -105,7 +105,7 @@
                     </li>
                     <li>
                       <a>
-                        <span class="image"><img src="assets/images/img.jpg" alt="Profile Image" /></span>
+                        <span class="image"><img src="../../assets/img/avatar.png" alt="Profile Image" /></span>
                         <span>
                           <span>John Smith</span>
                           <span class="time">3 mins ago</span>
@@ -117,7 +117,7 @@
                     </li>
                     <li>
                       <a>
-                        <span class="image"><img src="assets/images/img.jpg" alt="Profile Image" /></span>
+                        <span class="image"><img src="../../assets/img/avatar.png" alt="Profile Image" /></span>
                         <span>
                           <span>John Smith</span>
                           <span class="time">3 mins ago</span>
@@ -129,7 +129,7 @@
                     </li>
                     <li>
                       <a>
-                        <span class="image"><img src="assets/images/img.jpg" alt="Profile Image" /></span>
+                        <span class="image"><img src="../../assets/img/avatar.png" alt="Profile Image" /></span>
                         <span>
                           <span>John Smith</span>
                           <span class="time">3 mins ago</span>
@@ -148,7 +148,7 @@
                       </div>
                     </li>
                   </ul>
-                </li>
+                </li> -->
               </ul>
             </nav>
           </div>

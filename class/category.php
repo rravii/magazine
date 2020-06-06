@@ -28,10 +28,24 @@
                         'or' => array(
                             'status' => 'Active',
                         )
-                    )
+                        ),
+                'order' => 'ASC',
             );
 
             return $this->getData($args, $is_die);
+        }
+
+        public function countCategory(){
+            try{
+                $this->sql = 'select count(*) from '.$this->table;
+                $this->stmt = $this->conn->prepare($this->sql);
+                $this->stmt->execute();
+                $data = $this->stmt->fetchColumn(); 
+                return $data;
+            }catch(PDOException $e){
+                error_log(Date("M d, Y h:i:s a").' : (getDataFromQuery) : '.$e->getMessage()."\r\n", 3, ERROR_PATH.'error.log');
+                return false;
+            }
         }
 
         public function updateCategoryById($data, $id, $is_die=false){

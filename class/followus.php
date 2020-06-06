@@ -28,8 +28,9 @@
 					'and' => array(
 							'status' => 'Active',
 						)
-					)
-				);
+					),
+				'order' => 'ASC',
+			);
 
 			return $this->getData($args,$is_die);
 		}
