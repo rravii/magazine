@@ -29,7 +29,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 									<h3 class="footer-title">About Us</h3>
 									<ul class="footer-links">
 										<li><a href="about">About Us</a></li>
-										<li><a href="../join" data-toggle="modal" data-target="#theModal">Join Us</a></li>
+										<li><a href="join" data-toggle="modal" data-target="#theModal">Join Us</a></li>
 										<li><a href="contact">Contacts</a></li>
 									</ul>
 								</div>
@@ -63,11 +63,11 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
 					<div class="col-md-3">
 						<div class="footer-widget">
-							<h3 class="footer-title">Join our Newsletter</h3>
+							<h3 class="footer-title">Subscribe</h3>
 							<div class="footer-newsletter">
-								<form>
-									<input class="input" type="email" name="newsletter" placeholder="Enter your email">
-									<button class="newsletter-btn"><i class="fa fa-paper-plane"></i></button>
+								<form action="../process/subscribe" method="post">
+									<input class="input" type="email" name="email" placeholder="Enter your email">
+									<button type="submit" class="newsletter-btn"><i class="fa fa-paper-plane"></i></button>
 								</form>
 							</div>
 							<ul class="footer-social">

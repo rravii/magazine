@@ -14,11 +14,11 @@
 
         $success = $Join->addJoin($data);
         if($success){
-            redirect('../join', 'success', 'Join request added successfully.');
+            redirect('../index', 'success', 'Join request added successfully.');
         }else{
-            redirect('../join', 'error', 'Error while adding join request');
+            redirect('../index', 'error', 'Error while adding join request');
         }
     }else{
-        redirect('../join', 'error', 'Unauthorized Access');
+        redirect('../index', 'error', 'Unauthorized Access');
     }
 ?>

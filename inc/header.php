@@ -86,7 +86,7 @@
 						<ul class="nav-aside-menu">
 							<li><a href="index">Home</a></li>
 							<li><a href="about">About Us</a></li>
-							<li><a href="../join" data-toggle="modal" data-target="#theModal">Join Us</a></li>
+							<li><a href="join" data-toggle="modal" data-target="#theModal">Join Us</a></li>
 							<li><a href="contact">Contacts</a></li>
 						</ul>
 					</div>

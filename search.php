@@ -19,6 +19,7 @@
                 <?php
                     if(isset($_GET['searchtext']) && !empty($_GET['searchtext'])){
                         $text = $_GET['searchtext'];
+                        $text = str_replace(' ', '%', $text);
                         if($text){
                             $Blog = new blog();
                             $blog_info = $Blog->searchBlog($text);

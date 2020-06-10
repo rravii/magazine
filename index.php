@@ -7,6 +7,9 @@
 		<div class="section">
 			<!-- container -->
 			<div class="container">
+			<?php 
+				flashMessage(); 
+			?>
 				<!-- row -->
 				<div class="row">	
 					<?php 

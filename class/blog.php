@@ -64,7 +64,7 @@
                             "view" ,
                             "image",
                             "created_date"],
-                'where' => " where  status='Active' and title LIKE '".$search."%' or content LIKE '".$search."%'"
+                'where' => " where  status='Active' and title LIKE '%{$search}%' or title LIKE '".$search."%' or content LIKE '".$search."%'"
             );
 
             return $this->getData($args, $is_die);

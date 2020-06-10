@@ -61,8 +61,7 @@
         }else{
             $success = $Contact->addContact($data);
         }
-        if ($success){
-        
+        if ($success){     
             redirect($redirectUrl, 'success', 'Comment '.$act.'ed Successfully');
         }else{
             redirect($redirectUrl, 'error', 'Problem while '.$act.'ing Comment');

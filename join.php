@@ -7,7 +7,7 @@
         <div class="panel-heading text-center">
             Please fill up the form:
         </div>
-        <form action="cms/process/join" method="post">
+        <form action="process/join" method="post">
             <div class="panel-body" style="padding: 0px 50px 0px 50px">
                     <div class="text-left">Name:</div>
                     <input type="text" name="name" id="name" class="form-control">
@@ -19,7 +19,7 @@
             <p>* We'll mail you if you are eligible.</p>
             <div class="modal-footer">
                 <div class="panel-footer">
-                    <button type="sumbit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-primary">Submit</button>
                 </div>
             </div>
         </form>

@@ -144,6 +144,17 @@
                     updated_date datetime on update current_timestamp
                 )
         ",
+        'subscribe'=>"
+            CREATE TABLE IF NOT EXISTS subscribes
+                (
+                    id int not null AUTO_INCREMENT PRIMARY KEY,
+                    email varchar(100),
+                    status enum('Active','Passive') default 'Active',
+                    added_by int,
+                    created_date datetime default current_timestamp,
+                    updated_date datetime on update current_timestamp
+                )
+        ",
     );
 
     foreach ($table as $key => $sql){
